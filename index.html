@@ -7,29 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-
     <header>THE CODE REVIEW</header>
 
-    <h1>Signup for our newsletter</h1>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
-    
-    <form action="">
+    <div class="header">
+
+        <h1>Signup for our newsletter</h1>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
         
+    </div>
+
+    <form action="">
+        <div class="contact">
         <fieldset>
 
             <legend>Contact Information</legend>
-            <label>Full Name</label>
-            <input type="text" placeholder="Required" required>
-            <label>Email Address</label>
-            <input type="email" placeholder="Required" required>
-            <label>Phone</label>
-            <input type="tel">
-            <label>Street Address</label>
-            <input type="text">
-            <label>City</label>
-            <input type="text">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" name="contact" placeholder="Required" required>
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="contact" placeholder="Required" required>
+            <label for="tel">Phone Number</label>
+            <input id="tel" type="tel" name="contact">
+            <label for="address">Street Address</label>
+            <input id="address" type="text" name="contact">
+            <label for="city">City</label>
+            <input id="city" type="text" name="contact">
             
-            <label for="">State</label>
+            <label for="state">State</label>
             <select name="state" id="state" size="1">
                 <option value="">Choose State</option>
                 <option value="AL">Alabama</option>
@@ -86,33 +89,30 @@
 
             </select>
 
-            <label for="">Zip Code</label>
-            <input type="text" pattern="[0-9]*">
+            <label for="zip">Zip Code</label>
+            <input id="zip" type="text" name="contact" pattern="[0-9]*">
 
         </fieldset>
-
+        </div>
         <br>
 
-        <fieldset>
+        <fieldset class="newsletter">
 
             <legend>Newsletter</legend>
 
-            <p>Select the newsletter you would like to receive</p>
-            <select name="" id="">
-                <option value="">HTML News</option>
-                <option value="">CSS News</option>
-                <option value="">Javascript News</option>
+            <label>Select the newsletter you would like to receive</label>
+            <input type="checkbox" name="newsletter" value="hnews"> HTML News
+            <input type="checkbox" name="newsletter" value="cnews"> CSS News
+            <input type="checkbox" name="newsletter" value="jnews"> Javascript News
 
-            </select>
+            <label>Newsletter format</label>
+            <input type="radio" name="format" value="html" checked="checked"> HTML
+            <input type="radio" name="format" value="plain"> Plain text
 
-            <p>Newsletter format</p>
-            <input type="radio" name="hands" value="rock" checked="checked"> HTML
-            <input type="radio" name="hands" value="paper"> Plain text
+            <label for="comment">Other topics you'd like to hear about</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
 
-            <p>Other topics you'd like to hear about</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-
-        </fieldset>
+        </fieldset><!-- newsletter container end -->
 
         <button type="submit">Submit</button>
 
