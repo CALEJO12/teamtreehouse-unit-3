@@ -29,11 +29,11 @@
                         <label for="email">Email Address</label>
                         <input id="email" type="email" name="contact" placeholder="Required" required>
                         <label for="tel">Phone Number</label>
-                        <input id="tel" type="tel" name="contact">
+                        <input id="tel" type="tel" name="contact" placeholder="123-456-7890">
                         <label for="address">Street Address</label>
-                        <input id="address" type="text" name="contact">
+                        <input id="address" type="text" name="contact" placeholder="1234 Main Street, Apartment 123" required>
                         <label for="city">City</label>
-                        <input id="city" type="text" name="contact">
+                        <input id="city" type="text" name="contact" placeholder="Enter City" required>
                         
                         <label for="state">State</label>
                         <select name="state" id="state" size="1" required>
@@ -93,7 +93,7 @@
                         </select>
 
                         <label for="zip">Zip Code</label>
-                        <input id="zip" type="text" name="contact" pattern="[0-9]*">
+                        <input id="zip" type="text" name="contact" pattern="[0-9]*" placeholder="Enter Zip Code" required>
 
                     </fieldset>
                 </div><!-- end contact container -->
@@ -115,7 +115,7 @@
                         <li><input type="radio" name="format" value="plain"> Plain text</li>
                     </ul>
                     <label for="comment">Other topics you'd like to hear about</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter text here..."></textarea>
 
                 </fieldset><!-- newsletter container end -->
 

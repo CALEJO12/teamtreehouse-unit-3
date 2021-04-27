@@ -26,6 +26,10 @@ header {
     font-weight: 700;
 }
 
+.contact {
+    background-color: #fff1d1;
+}
+
 h1 {
     color: #34495E;
     font-size: 1.4em;
@@ -42,6 +46,7 @@ fieldset {
 .contact {
     border-bottom: 2px solid black;
     border-top: 2px solid black;
+    padding: 20px;
 }
 
 input[name="contact"], #state {
@@ -57,7 +62,8 @@ input[name="contact"], #state {
 }
 
 input[name="contact"]:focus, #state:focus, #comment:focus {
-    background-color: #c8e3e2 ;
+    background-color: #c8e3e2;
+    transition: .7s ease-out;
 }
 
 select:invalid {
@@ -75,10 +81,15 @@ legend {
     font-weight: bold;
 }
 
-input::placeholder {
+#email::placeholder, #name::placeholder {
     text-align: right;
     color: #c2c0c0;
     font-style: italic;
+}
+
+#tel::placeholder, #address::placeholder, #city::placeholder, #zip::placeholder {
+    text-align: left;
+    color: #c2c0c0;
 }
 
 ul {
