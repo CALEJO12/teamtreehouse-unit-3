@@ -9,34 +9,48 @@
         <link rel="stylesheet" href="styles.css">
         <title>Document</title>
     </head>
+
     <body>
+
         <header>THE CODE REVIEW</header>
+
         <div class="headercontact">
+
             <div class="header">
 
                 <h1>Signup for our newsletter</h1>
+
                 <p>Get the latest news on how your code is doing right in your inbox</p>
                 
             </div>
 
-            <form action="">
+            <form action="index.html">
+
                 <div class="contact">
-                    <fieldset>
+                    
+                    <fieldset class="contactInformation">
 
                         <legend>Contact Information</legend>
+
                         <label for="name">Full Name</label>
                         <input id="name" type="text" name="contact" placeholder="Required" required>
+
                         <label for="email">Email Address</label>
                         <input id="email" type="email" name="contact" placeholder="Required" required>
+
                         <label for="tel">Phone Number</label>
                         <input id="tel" type="tel" name="contact" placeholder="123-456-7890">
+
                         <label for="address">Street Address</label>
                         <input id="address" type="text" name="contact" placeholder="1234 Main Street, Apartment 123" required>
+
                         <label for="city">City</label>
                         <input id="city" type="text" name="contact" placeholder="Enter City" required>
                         
                         <label for="state">State</label>
+
                         <select name="state" id="state" size="1" required>
+
                             <option value="" disabled selected hidden>Choose State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
@@ -95,26 +109,61 @@
                         <label for="zip">Zip Code</label>
                         <input id="zip" type="text" name="contact" pattern="[0-9]*" placeholder="Enter Zip Code" required>
 
-                    </fieldset>
+                    </fieldset><!-- end contactInformation container -->
+
                 </div><!-- end contact container -->
 
                 <fieldset class="newsletter">
 
                     <legend>Newsletter</legend>
 
-                    <label for="newsletter">Select the newsletter you would like to receive</label>
+                    <p>Select the newsletter you would like to receive</p>
                     <ul>
-                        <li><input id="newsletter" type="checkbox" name="newsletter" value="hnews" checked="checked"> HTML News</li>
-                        <li><input type="checkbox" name="newsletter" value="cnews"> CSS News</li>
-                        <li><input type="checkbox" name="newsletter" value="jnews"> Javascript News</li>
+
+                        <li>
+
+                            <input id="htmlNews" type="checkbox" name="newsletter" value="hnews" checked="checked">
+                            <label for="htmlNews">HTML News</label>
+
+                        </li>
+
+                        <li>
+
+                            <input id="cssNews" type="checkbox" name="newsletter" value="cnews">
+                            <label for="cssNews">CSS News</label>
+
+                        </li>
+
+                        <li>
+
+                            <input id="jNews" type="checkbox" name="newsletter" value="jnews">
+                            <label for="jNews">Javascript News</label>
+
+                        </li>
+
                     </ul>
 
-                    <label for="format">Newsletter format</label>
+                    <p>Newsletter format</p>
+                    
                     <ul>
-                        <li><input id="format" type="radio" name="format" value="html" checked="checked"> HTML</li>
-                        <li><input type="radio" name="format" value="plain"> Plain text</li>
+
+                        <li>
+
+                            <input id="htmlRadio" type="radio" name="format" value="html" checked="checked">
+                            <label for="htmlRadio">HTML</label>
+
+                        </li>
+
+                        <li>
+                            <input id="plainRadio" type="radio" name="format" value="plain">
+                            <label for="plainRadio">Plain text</label>
+
+                        </li>
+
                     </ul>
+
                     <label for="comment">Other topics you'd like to hear about</label>
+
                     <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter text here..."></textarea>
 
                 </fieldset><!-- newsletter container end -->
@@ -132,4 +181,5 @@
         </div><!-- end headercontact container -->
 
     </body>
+
 </html>
